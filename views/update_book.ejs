@@ -22,16 +22,16 @@
     <div class="update_book">
         <div class="form-group">
             <label for="name" class="text-light">Book Name</label>
-            <input type="hidden" name="id" value="">
-            <input type="text" name="name" value="">
+            <input type="hidden" name="id" value="<%= book._id %>">
+            <input type="text" name="name" value="<%= book.name %>">"
         </div>
         <div class="form-group">
             <label for="author" class="text-light">Author</label>
-            <input type="text" name="author" value="" >
+            <input type="text" name="author" value="<%= book.author %>" >
         </div>
         <div class="form-group">
             <label for="genre" class="text-light">Genre</label>
-            <input type="text" name="genre" value="" >
+            <input type="text" name="genre" value="<%= book.genre %>" >
         </div>
         <div class="form-group">
             <label for="status" class="text-light">Status</label>
